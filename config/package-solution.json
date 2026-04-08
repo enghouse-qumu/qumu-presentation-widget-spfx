@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "qumu-presentation-widget-spfx-client-side-solution",
+    "id": "7877a6dc-9d97-4cb2-863d-7f29b7a3844c",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.22.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "qumu-presentation-widget-spfx description"
+      },
+      "longDescription": {
+        "default": "qumu-presentation-widget-spfx description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "qumu-presentation-widget-spfx Feature",
+        "description": "The feature that activates elements of the qumu-presentation-widget-spfx solution.",
+        "id": "962607e6-a921-40c7-bb9d-cc4406d1b892",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/qumu-presentation-widget-spfx.sppkg"
+  }
+}

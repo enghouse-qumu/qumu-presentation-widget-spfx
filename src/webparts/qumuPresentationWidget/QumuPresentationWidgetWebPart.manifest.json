@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "f47896d1-b837-4946-93da-934171b3f4a6",
+  "alias": "QumuPresentationWidgetWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Advanced" },
+    "title": { "default": "Qumu Presentation Widget" },
+    "description": { "default": "Loads the Qumu presentation widget from the @qumu/widgets package." },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "guid": "JN6JHrg17xpwF8klXSIfFj",
+      "host": "https://demo.qumucloud.com/",
+      "playbackMode": "inline"
+    }
+  }]
+}

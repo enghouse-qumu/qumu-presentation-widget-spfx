@@ -1,0 +1,23 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "qumu-presentation-widget-spfx",
+    "environment": "spo",
+    "packageManager": "npm",
+    "skipFeatureDeployment": true,
+    "useGulp": false,
+    "componentType": "webpart",
+    "template": "none",
+    "componentName": "QumuWidgetRepro",
+    "componentDescription": "Qumu widget CSP repro web part",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.22.2",
+    "sdksVersions": {},
+    "version": "1.22.2",
+    "libraryName": "qumu-presentation-widget-spfx",
+    "libraryId": "7877a6dc-9d97-4cb2-863d-7f29b7a3844c",
+    "solutionShortDescription": "qumu-presentation-widget-spfx description",
+    "isDomainIsolated": false
+  }
+}
