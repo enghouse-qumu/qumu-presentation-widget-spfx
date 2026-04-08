@@ -24,7 +24,7 @@ export default class QumuPresentationWidgetWebPart extends BaseClientSideWebPart
   private _widget?: PresentationWidget;
 
   public render(): void {
-    this.domElement.innerHTML = `<div id="widget" class="${styles.widgetHost}"></div>`;
+    this.domElement.innerHTML = `<div id="${this._getWidgetElementId()}" class="${styles.widgetHost}"></div>`;
 
     this._renderWidget().catch(() => undefined);
   }
@@ -93,7 +93,7 @@ export default class QumuPresentationWidgetWebPart extends BaseClientSideWebPart
       this._widget = await PresentationWidget.create({
         host: this.properties.host,
         guid: this.properties.guid,
-        selector: '#widget',
+        selector: `#${this._getWidgetElementId()}`,
         widgetOptions: {
           playbackMode: this.properties.playbackMode
         }
@@ -101,5 +101,9 @@ export default class QumuPresentationWidgetWebPart extends BaseClientSideWebPart
     } catch (error) {
       console.error(strings.LoadFailedPrefix, error instanceof Error ? error.message : strings.UnknownError);
     }
+  }
+
+  private _getWidgetElementId(): string {
+    return `widget-${this.instanceId}`;
   }
 }
