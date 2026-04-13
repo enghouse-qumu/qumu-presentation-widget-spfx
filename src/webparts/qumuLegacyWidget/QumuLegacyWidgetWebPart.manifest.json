@@ -15,8 +15,8 @@
     "description": { "default": "Loads the legacy Qumu widget through KV.widget()." },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "guid": "OjlQcY3AfygQA6GhhAixKL",
-      "host": "https://mwitalinski1.qumu.dev/",
+      "guid": "JN6JHrg17xpwF8klXSIfFj",
+      "host": "https://demo.qumucloud.com/",
       "type": "thumbnail"
     }
   }]
