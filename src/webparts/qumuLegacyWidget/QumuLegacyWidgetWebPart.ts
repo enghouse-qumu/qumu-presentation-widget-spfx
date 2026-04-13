@@ -99,9 +99,12 @@ export default class QumuLegacyWidgetWebPart extends BaseClientSideWebPart<IQumu
 
   private async _renderWidget(): Promise<void> {
     try {
-      const kv = await SPComponentLoader.loadScript<IKvWidgetGlobal>(this.properties.host + 'widgets/application-spfx.js', {
-        globalExportsName: 'KV'
-      });
+      const kv = await SPComponentLoader.loadScript<IKvWidgetGlobal>(
+        new URL('widgets/application-spfx.js', this.properties.host).toString(),
+        {
+          globalExportsName: 'KV'
+        }
+      );
 
       kv.widget({
         guid: this.properties.guid,
