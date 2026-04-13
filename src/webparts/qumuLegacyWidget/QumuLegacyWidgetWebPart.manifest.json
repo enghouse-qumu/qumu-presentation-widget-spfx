@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "2f5ef531-cf37-46da-b46f-5880cb55ce8e",
+  "alias": "QumuLegacyWidgetWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Advanced" },
+    "title": { "default": "Qumu Legacy Widget" },
+    "description": { "default": "Loads the legacy Qumu widget through KV.widget()." },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "guid": "JN6JHrg17xpwF8klXSIfFj",
+      "host": "https://demo.qumucloud.com/",
+      "type": "thumbnail"
+    }
+  }]
+}
